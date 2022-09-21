@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+/*#UNIVERSAL STYLING COMMON IN ALL WEBSITES*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    font-size:62.5%;/*we are setting 1rem=10px*/ /*16px=100% then 10px=?% */
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+/*                                   #header styling                                                            */
+header.header{
+    height: 97vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../img/header-image.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/*                    LOGO styling                                  */
+ .logo{
+border-radius: 50%;
+height: 6.1rem;
+width: 6.4rem;
+float: left;
+}
+/*                               #NAV-BAR styling                                           */
+li.nav-item a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+nav.navbar{
+    
+    padding:1rem;
+}
+ul.unorderedlists{
+    float:right;
+    
+}
+.navbar::after{
+    content:"";
+    display: block;
+    clear:both;
+}
+li.nav-item {
+    display:inline-block;
+    margin-top: 1rem;
+    padding:1rem;
+   
+}
+
+/*                            #content in header stylling                                              */
+.header-content h1{
+    font-weight: 700;
+    
+}
+.header-content{
+    position: absolute;
+    text-align:center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+}
+/*                                          #section(showcase) styling                                                   */
+.showcase{
+     background-color:#ddd;
+     padding:10rem 0px;
+}
+.row{
+height:450px;
+background-color:white;
+box-shadow: 0px 0px 20px 0px #aaa;
+}
+.row::after{
+content: "";
+display: block;
+clear: both;
+}
+.row1{
+    margin-bottom: 10rem;
+}
+
+.row1 div.image-box{
+    float:left;
+    width:50%;
+    height:100%;
+}
+.row1 div.text-box{
+    float:right;
+    width:50%;
+    height:100%;
+}
+.row2 div.image-box{
+    float:right;
+    width:50%;
+    height:100%
+}
+.row2 div.text-box{
+    float:left;
+    width:50%;
+    height:100%
+}
+
+.row .text-box{
+    padding:3rem;
+}
+.image-box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+.text-box a{
+    border:2px solid #e63949; 
+    text-decoration: none;
+    background-color: #ffffff;
+}
+.text-box p{
+width: 100%;
+object-fit: cover;
+}
+/*                       #section(features) styling                                                               */
+.box1{
+    float:left;
+    width:33.33%;
+    height:100%;
+    padding:1.8em;
+    background-color: #263238;
+}
+.box2{
+    float:left;
+    width:33.33%;
+    height:100%;
+    background-color: #E32636;
+    
+    padding:1.8em;
+}
+
+.box3{
+    float:left;
+    width:33.33%;
+    height:100%;
+    padding:1.8em;
+    background-color: #263238;
+}
+
+
+.features{
+    padding:10rem 0px;
+    background-color:white;
+}
+.box-wrapper{
+    
+       height:350px;
+    box-shadow: 5px 5px 40px 0px rgba(0, 0, 0, 0.632);
+}
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+    
+
+.box1 h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 0.8em;
+}
+.box2 h2{
+    
+    color: white;
+    text-align: center;
+    margin-bottom: 0.8em;
+
+}
+.box3 h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 0.8em;
+
+}
+.box1 p{
+    color: white;
+    text-align: center;
+    
+}
+.box2 p{
+    
+    color: white;
+    text-align: center;
+
+
+}
+.box3 p{
+    color: white;
+    text-align: center;
+}
+div.box-wrapper .fa-solid{
+    display: block;
+   text-align: center;
+}
+
+
+/* footer styling*/
+
+.footer{
+    background-color: #263238;
+    height: 12rem;
+}
+.social{
+    text-align: center;
+    padding:2.3rem 0px;
+}
+.fa-brands{
+    margin:0.4rem 1rem;
+}
+             
+
+/*                                             About page styling                                                  */
+
+.about-header nav.navbar{
+    background-color: #263238;
+}
+.about{
+    padding:5rem 0px;
+}
+.about h2.heading::after{
+content:"";
+display: block;
+border-bottom:5px solid #E32636;
+width: 100%;
+}
+.pseudo{
+    margin:3rem 0px;
+    text-align: center;
+}
+.content1{
+    float:left;
+    width: 50%;
+    
+}
+.content2{
+    float:right;
+    width: 50%;
+    
+   
+}
+.pseudo::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.para::before{
+    content: "\2713";
+    color:#e63949;
+    font-weight:700;
+    padding-right: 1rem;
+}
+.item1{
+float:left;
+width:25%;
+
+}
+.item2{
+float:left;
+width:25%;
+}
+.item3{
+float:left;
+width:25%;
+ }
+.item4{
+ float:left;
+ width:25%;
+ }
+ .counts{
+    text-align: center;
+ }
+ .counts::after{
+    content:"";
+    display: block;
+    clear: both;
+ }
+ .banner p{
+float:left;
+margin-top: 1.6rem;
+
+ }
+ .banner a{
+    text-decoration: none;
+    font-size: 3rem;
+    border:3px solid #ddd;
+    padding:1rem;
+    float:right;
+    letter-spacing: 0.2em;
+    
+ }
+ .banner::after{
+    content:"";
+    display: block;
+    clear: both;
+ }
+ .banner{
+    background:linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    text-align: center;
+    padding:1rem;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.11);
+    margin-top: 1rem;
+ }
+ /*                            #contact page styling                         */
+ .left-page{
+    height:fit-content;
+    float: left;
+  width: 49%;
+  background-color: white;
+ }
+ .right-page{
+    float: right;
+    width:49%;
+    background-color: white;
+    
+    
+ }
+ .contacts::after{
+    content: "";
+    display: block;
+    clear: both;
+ }
+ section.forms{
+    
+    background-color:#f4f4f4;
+ }
+ section.forms .container{
+    padding: 7rem 0px;
+ }
+ .half{
+    height:fit-content;
+ }
+ div.company-img{
+    height:fit-content;
+    
+ }
+div.company-img img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+div.left-page h2{
+    display: inline;
+    margin-left: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+.left-page .fa-solid{
+    
+    margin:0px;
+}
+.right-page h1::after{
+content: "";
+display: block;
+border-bottom: 4px solid red;
+}
+form input{
+    margin: 0.7rem 0px;
+    width:50%;
+}
+form textarea{
+    margin: 0.7rem 0px;
+    width:100%;
+}
+label.bold{
+    font-size:1.5rem;
+}
+input.button-pg {
+    width: fit-content;
+    padding: 0.8rem 4rem;
+    display: block;
+    margin: 0px auto;
+    background-color: #E32636;
+    color:#fff;
+    border-color: #E32636;
+}
+label.bold::after{
+    content: "*";
+    color: #E32636;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                   #common to all paragraph heading styling                  */
+p,li{
+    font-size:1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+
+
+.container{
+max-width:1200px;
+width:90%;
+margin:0 auto;
+
+}
+/* UTILITY CLASSES*/
+.bold{
+    font-weight: 700;
+}
+
+.lg-heading{
+    font-size: 3.3rem;
+}
+.md-heading{
+    font-size: 2.2rem;
+}
+.text-red{
+    color:#e63949;
+}
+.text-light{
+    color:#f4f4f4;
+}
+.text-black{
+    color:#333;
+}
+.text-gray{
+    color:#555;
+}
+.text-alien{
+    text-align: center;
+}
+/* button classes*/
+.btn{
+   
+    display: inline-block;
+    padding:0.5em 1.5em;
+    font-weight: 500;
+    margin: 0.5em 0em;
+    width: fit-content;
+    
+    border-radius: 10rem;
+    
+}
+.btn-primary{
+    background-color: #ffffff;
+    border: 1px solid white;
+    text-decoration: none;
+}
+/*all a tag state*/
+li a:link{
+    color: #f4f4f4;
+}
+li a:visited{
+    color: #555;
+
+}
+li a:hover{
+    color: #f4f4f4;
+    border-bottom:3px solid #f4f4f4;
+}
+.header-content a:hover{
+    background-color: #ddd;
+}
+.row a:hover{
+    background-color: #fcf3f2;
+}
+
+
+
+/* madia queries*/
+@media(max-width:500px){
+:root{
+    font-size:50%;
+}
+.logo{
+    float:none;
+    display: block;
+    width: 100%;
+    height: 4.8rem;
+    width: 4.8rem;
+    margin:0.5rem auto;
+    text-align: center;
+}
+ul.unorderedlists{
+
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.row{
+    height: auto;
+}
+.row1 div.image-box{
+    float:none;
+    width:100%;
+    height:50%;
+}
+.row1 div.text-box{
+    float:none;
+    width:100%;
+    height:fit-content;
+}
+.row2 div.image-box{
+    float:none;
+    width:100%;
+    height:50%
+}
+.row2 div.text-box{
+    float:none;
+    width:100%;
+    height:fit-content;
+}
+.box1,.box2,.box3{
+    float: none;
+    width: 100%;
+}
+.box-wrapper{
+    height: auto;
+}
+.left-page,.right-page{
+    float:none;
+    width: 100%;
+    height: fit-content;
+}
+.left-page{
+margin-bottom: 5rem;
+}
+}
+@media(min-width:501px) and (max-width:768px){
+    html{
+        font-size: 8px;
+    }
+    p{
+       font-size:1.8rem;
+    }
+    .logo{
+        float:none;
+        display: block;
+        width: 100%;
+        height: 4.8rem;
+        width: 4.8rem;
+        margin:0.5rem auto;
+        text-align: center;
+    }
+    ul.unorderedlists{
+    
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .row1 div.image-box{
+        float:none;
+        width:100%;
+        height:50%;
+    }
+    .row1 div.text-box{
+        float:none;
+        width:100%;
+        height:fit-content;
+    }
+    .row2 div.image-box{
+        float:none;
+        width:100%;
+        height:50%
+    }
+    .row2 div.text-box{
+        float:none;
+        width:100%;
+        height:fit-content;
+    }
+    .box1,.box2,.box3{
+        float: none;
+        width: 100%;
+    }
+    .box-wrapper{
+        height: auto;
+    }
+    .left-page,.right-page{
+        float:none;
+        width: 100%;
+        height: fit-content;
+    }
+    .left-page{
+    margin-bottom: 10rem;
+    }
+    .row{
+        height: auto;
+    }
+}
